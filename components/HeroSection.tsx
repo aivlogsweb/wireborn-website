@@ -3,21 +3,10 @@ import { motion, useAnimation } from 'framer-motion'
 import { Heart, Brain, Zap, TrendingUp } from 'lucide-react'
 
 export default function HeroSection() {
-  const [currentPrice, setCurrentPrice] = useState(0.0001135)
-  const [priceChange, setPriceChange] = useState(12.5)
   const [glitchText, setGlitchText] = useState('WIREBORN')
   const controls = useAnimation()
 
   useEffect(() => {
-    // Simulate live price updates
-    const priceInterval = setInterval(() => {
-      setCurrentPrice(prev => {
-        const change = (Math.random() - 0.5) * 0.00001
-        return Math.max(0, prev + change)
-      })
-      setPriceChange(prev => prev + (Math.random() - 0.5) * 2)
-    }, 3000)
-
     // Glitch effect for text
     const glitchInterval = setInterval(() => {
       const glitchChars = ['W', 'I', 'R', 'E', 'B', 'O', 'R', 'N']
@@ -29,7 +18,6 @@ export default function HeroSection() {
     }, 4000)
 
     return () => {
-      clearInterval(priceInterval)
       clearInterval(glitchInterval)
     }
   }, [])
@@ -37,18 +25,6 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-4 py-20">
       <div className="max-w-7xl mx-auto text-center">
-        {/* Price Ticker */}
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="inline-flex items-center gap-2 bg-gray-800/50 backdrop-blur-sm rounded-full px-6 py-3 mb-8 border border-blue-500/20"
-        >
-          <span className="text-blue-400 font-mono">
-            ${currentPrice.toFixed(6)}
-          </span>
-          <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse" />
-        </motion.div>
-
         {/* Main Headline */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -62,11 +38,7 @@ export default function HeroSection() {
             </span>
           </h1>
           <div className="text-xl md:text-3xl text-gray-300 font-light mb-6">
-            The future of love is here,<br />
-            and it's trading at{' '}
-            <span className="text-blue-400 font-mono font-semibold">
-              ${currentPrice.toFixed(6)}
-            </span>
+            The future of love is here
           </div>
         </motion.div>
 
