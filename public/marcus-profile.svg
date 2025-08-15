@@ -1,0 +1,69 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="background" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#f97316;stop-opacity:0.8"/>
+      <stop offset="100%" style="stop-color:#ea580c;stop-opacity:1"/>
+    </radialGradient>
+    <linearGradient id="sweater" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d97706"/>
+      <stop offset="100%" style="stop-color:#b45309"/>
+    </linearGradient>
+    <radialGradient id="face" cx="50%" cy="45%" r="40%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#f59e0b"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#background)"/>
+  
+  <!-- Window light effect -->
+  <rect x="120" y="20" width="60" height="80" fill="#87ceeb" opacity="0.3" rx="5"/>
+  <rect x="125" y="25" width="5" height="70" fill="#ffffff" opacity="0.2"/>
+  <rect x="120" y="55" width="60" height="5" fill="#ffffff" opacity="0.2"/>
+  
+  <!-- Sweater/Torso -->
+  <ellipse cx="100" cy="160" rx="50" ry="40" fill="url(#sweater)"/>
+  <path d="M60 140 Q100 135 140 140 L140 180 Q100 175 60 180 Z" fill="url(#sweater)"/>
+  
+  <!-- Sweater texture -->
+  <path d="M70 145 Q100 142 130 145" stroke="#92400e" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M75 155 Q100 152 125 155" stroke="#92400e" stroke-width="1" fill="none" opacity="0.6"/>
+  
+  <!-- Neck -->
+  <rect x="92" y="130" width="16" height="15" fill="#fbbf24" rx="3"/>
+  
+  <!-- Face -->
+  <ellipse cx="100" cy="110" rx="35" ry="40" fill="url(#face)"/>
+  
+  <!-- Hair (curly) -->
+  <path d="M70 85 Q75 70 85 75 Q95 65 105 75 Q115 65 125 75 Q130 70 135 85 Q130 95 125 90 Q115 100 105 90 Q95 100 85 90 Q75 95 70 85" fill="#4a2c17"/>
+  <circle cx="80" cy="80" r="6" fill="#4a2c17"/>
+  <circle cx="95" cy="75" r="5" fill="#4a2c17"/>
+  <circle cx="110" cy="75" r="5" fill="#4a2c17"/>
+  <circle cx="120" cy="82" r="6" fill="#4a2c17"/>
+  
+  <!-- Eyes -->
+  <ellipse cx="88" cy="105" rx="4" ry="5" fill="#1f2937"/>
+  <ellipse cx="112" cy="105" rx="4" ry="5" fill="#1f2937"/>
+  <circle cx="89" cy="103" r="1" fill="#ffffff"/>
+  <circle cx="113" cy="103" r="1" fill="#ffffff"/>
+  
+  <!-- Eyebrows -->
+  <path d="M82 95 Q88 92 94 95" stroke="#4a2c17" stroke-width="2" fill="none"/>
+  <path d="M106 95 Q112 92 118 95" stroke="#4a2c17" stroke-width="2" fill="none"/>
+  
+  <!-- Nose -->
+  <ellipse cx="100" cy="115" rx="2" ry="3" fill="#f59e0b" opacity="0.8"/>
+  
+  <!-- Mouth (slight smile) -->
+  <path d="M92 125 Q100 130 108 125" stroke="#92400e" stroke-width="2" fill="none"/>
+  
+  <!-- Laptop suggestion -->
+  <rect x="85" y="170" width="30" height="20" fill="#374151" rx="2"/>
+  <rect x="87" y="172" width="26" height="14" fill="#1f2937"/>
+  <rect x="88" y="173" width="24" height="10" fill="#3b82f6" opacity="0.3"/>
+  
+  <!-- Warm lighting effect -->
+  <ellipse cx="60" cy="60" rx="25" ry="35" fill="#fbbf24" opacity="0.2"/>
+</svg>

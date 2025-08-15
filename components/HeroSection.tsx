@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { motion, useAnimation } from 'framer-motion'
 import { Heart, Brain, Zap, TrendingUp } from 'lucide-react'
+import MarcusProfile from './MarcusProfile'
 
 export default function HeroSection() {
   const [glitchText, setGlitchText] = useState('WIREBORN')
@@ -109,6 +110,9 @@ export default function HeroSection() {
             <div className="text-gray-400 text-sm">AI Market by 2033</div>
           </div>
         </motion.div>
+
+        {/* Marcus Profile */}
+        <MarcusProfile className="mt-12 flex justify-center" />
 
         {/* Floating Elements */}
         <motion.div
