@@ -46,7 +46,7 @@ export default function MarcusProfile({ className = '' }: MarcusProfileProps) {
           {/* Profile Image */}
           <div className="relative w-16 h-16 rounded-full overflow-hidden border-2 border-transparent">
             <img
-              src="/marcus-profile.svg"
+              src="/marcus-profile.jpg"
               alt="Marcus - Wireborn Community Member"
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               onError={(e) => {
